@@ -18,8 +18,11 @@ import android.widget.ListView;
 import android.widget.TextView;
 
 import com.syxl.adarcy.myopengldemo.R;
+import com.syxl.adarcy.myopengldemo.opengl.render.Ball;
+import com.syxl.adarcy.myopengldemo.opengl.render.BallWithLight;
 import com.syxl.adarcy.myopengldemo.opengl.render.Cone;
 import com.syxl.adarcy.myopengldemo.opengl.render.Cube;
+import com.syxl.adarcy.myopengldemo.opengl.render.Cylinder;
 import com.syxl.adarcy.myopengldemo.opengl.render.Oval;
 import com.syxl.adarcy.myopengldemo.opengl.render.Square;
 import com.syxl.adarcy.myopengldemo.opengl.render.Triangle;
@@ -70,9 +73,9 @@ public class ChooseActivity extends AppCompatActivity {
         add("圆形", Oval.class);
         add("正方体", Cube.class);
         add("圆锥", Cone.class);
-//        add("圆柱", Cylinder.class);
-//        add("球体", Ball.class);
-//        add("带光源的球体",BallWithLight.class);
+        add("圆柱", Cylinder.class);
+        add("球体", Ball.class);
+        add("带光源的球体",BallWithLight.class);
     }
 
     private void add(String showName, Class<?> clazz){
