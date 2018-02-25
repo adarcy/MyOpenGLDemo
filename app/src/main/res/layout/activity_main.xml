@@ -1,22 +1,66 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
-
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="edu.wuwang.opengl.MainActivity">
+    <android.support.v7.widget.RecyclerView android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/mList">
+    </android.support.v7.widget.RecyclerView>
     <Button
-        android:id="@+id/bt1"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="跳转"/>
-
-    <com.syxl.adarcy.myopengldemo.widget.LoadingView
-        android:layout_width="wrap_content"
+        android:text="@string/type_draw"
+        android:id="@+id/btDraw"
+        android:onClick="onClick" />
+    <Button
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        app:loading_view_size="54dp"
-        android:visibility="gone"
-        app:color="#ff0000"
-        android:layout_centerInParent="true"/>
-
-</RelativeLayout>
+        android:text="@string/type_texture"
+        android:id="@+id/btTexture"
+        android:onClick="onClick" />
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/type_vary"
+        android:id="@+id/btVary"
+        android:onClick="onClick" />
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/type_camera"
+        android:id="@+id/btCamera"
+        android:onClick="onClick" />
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/type_animation"
+        android:id="@+id/btAni"
+        android:onClick="onClick" />
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/type_fbo"
+        android:id="@+id/btFbo"
+        android:onClick="onClick" />
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/type_egl"
+        android:id="@+id/btEgl"
+        android:onClick="onClick" />
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/type_obj"
+        android:id="@+id/btObj"
+        android:onClick="onClick" />
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/type_obj2"
+        android:id="@+id/btObj2"
+        android:onClick="onClick" />
+</LinearLayout>
