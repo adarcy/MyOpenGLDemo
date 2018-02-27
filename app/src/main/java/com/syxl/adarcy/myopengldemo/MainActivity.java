@@ -11,6 +11,7 @@ import android.widget.Button;
 
 import com.syxl.adarcy.myopengldemo.opengl.image.SGLViewActivity;
 import com.syxl.adarcy.myopengldemo.opengl.render.FGLViewActivity;
+import com.syxl.adarcy.myopengldemo.opengl.vr.VrContextActivity;
 
 import java.util.ArrayList;
 
@@ -38,7 +39,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 //        add("EGL后台处理",EGLBackEnvActivity.class);
 //        add("3D obj模型",ObjLoadActivity.class);
 //        add("obj+mtl模型",ObjLoadActivity2.class);
-//        add("VR效果",VrContextActivity.class);
+        add("VR效果",VrContextActivity.class);
 //        add("颜色混合",BlendActivity.class);
         mList.setAdapter(new MenuAdapter());
     }

@@ -23,6 +23,7 @@
         <activity android:name=".opengl.render.FGLViewActivity"></activity>
         <activity android:name=".opengl.ChooseActivity"></activity>
         <activity android:name=".opengl.image.SGLViewActivity"></activity>
+        <activity android:name=".opengl.vr.VrContextActivity"></activity>
     </application>
 
 </manifest>
